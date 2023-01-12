@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  background-color: rgb(180, 216, 247);
+  border-radius: 15px;
+}
+
+.progress-container {
+  /* height will be fixed in all the container */
+
+  height: 20px;
+  width: 200px;
+  background-color: rgb(237, 225, 225);
+  position: relative;
+  border-radius: 15px;
+}
+.indicator {
+  /* height will be fixed in all the container */
+  height: 20px;
+  background-color: green;
+  width: 50%;
+  animation: inidicator 1s;
+  transition: 1s ease-in-out;
+  border-radius: 15px;
+}
+
+.inicatorcircle {
+  /* height will be fixed in all the container */
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: orangered;
+  position: absolute;
+  left: 48%;
+  top: 0%;
+  animation: inidicatorcircle 1s;
+  transition: 1s ease-in-out;
+}
+
+@keyframes inidicatorcircle {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 48%;
+  }
+}
+@keyframes inidicator {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
